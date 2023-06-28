@@ -5,6 +5,7 @@ import { BiPlusCircle } from 'react-icons/bi';
 
 type Props = {};
 const Header = (props: Props) => {
+  
   return (
     <header className='shadow-sm sticky top-0 border-b p-3 z-30 bg-white'>
       <div className='flex items-center justify-between max-w-6xl xl:mx-auto mt-2 mx-4'>
@@ -44,7 +45,7 @@ const Header = (props: Props) => {
             height={40}
             width={30}
             alt='Me'
-            className='rounded-lg cursor-pointer object-cover'
+            className='rounded-full cursor-pointer object-cover h-8 w-8'
           />
         </div>
       </div>
