@@ -1,11 +1,11 @@
-import Story from './Stories';
+import Stories from './Stories';
 
 type Props = {};
 const Feed = (props: Props) => {
   return (
     <main>
       <section>
-        <Story />
+        <Stories />
       </section>
       <section></section>
     </main>

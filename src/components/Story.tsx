@@ -8,8 +8,12 @@ type Props = {
 const Story = ({ username, img }: Props) => {
   return (
     <div>
-      <Image src={img} alt={username} width={30} height={30} />
-      <p>{username}</p>
+      <img
+        src={img}
+        alt={username}
+        className='h-14 rounded-full p-[1.5px] border-red-500 border-2 cursor-pointer object-cover hover:scale-110 transition-transform duration-200 ease-out'
+      />
+      <p className='text-xs w-14 truncate'>{username}</p>
     </div>
   );
 };

@@ -15,6 +15,7 @@ const Header = (props: Props) => {
             height={150}
             width={150}
             alt='Logo'
+            priority
             className='object-contain h-12'
           />
         </div>
@@ -24,28 +25,28 @@ const Header = (props: Props) => {
             height={40}
             width={60}
             alt='Logo'
-            className='object-contain h-9'
+            className='object-contain h-10 '
           />
         </div>
-        <div className=' relative mt-1'>
-          <div className='absolute top-2 left-2'>
+        <div className='relative mt-[0.5]'>
+          <div className='absolute top-2 left-2 flex items-center'>
             <CiSearch className='h-5 text-gray-600' />
           </div>
           <input
             type='text'
             placeholder='search'
-            className='bg-gray-50 pl-10 border-gray-500 text-sm focus:ring-black focus:border-black rounded-md'
+            className='bg-gray-50 pl-10 border-gray-500 text-sm py-1 px-1 md:py-2  focus:ring-black focus:border-black rounded-md'
           />
         </div>
         <div className='flex space-x-2 items-center'>
           <AiFillHome className='hidden md:inline-flex cursor-pointer h-6 hover:scale-125 transition-transform duration-200 ease-out' />
-          <BiPlusCircle className='cursor-pointer h-6 hover:scale-125 transition-transform duration-200 ease-out' />
+          <BiPlusCircle className='cursor-pointer h-6 hover:scale-125 transition-transform duration-200 ease-out text-lg' />
           <Image
             src='/10.jpg'
             height={40}
             width={30}
             alt='Me'
-            className='rounded-full cursor-pointer object-cover h-8 w-8'
+            className='rounded-full cursor-pointer object-cover h-6 w-6'
           />
         </div>
       </div>

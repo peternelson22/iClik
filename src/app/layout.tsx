@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className=''>
+      <body className='scrollbar-thin scrollbar-track-slate-600 scrollbar-thumb-rose-800'>
         <Header />
         {children}
       </body>
