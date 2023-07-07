@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { BiHappy } from 'react-icons/bi';
 import { BsBookmarkCheck, BsChatDots, BsHeart } from 'react-icons/bs';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 
@@ -32,6 +33,19 @@ const Post = ({ id, userImg, username, img, caption }: Props) => {
         </div>
         <BsBookmarkCheck className='btn' />
       </div>
+      <p className='p-4 truncate'>
+        <span className='font-bold mr-2'>{username}</span>
+        {caption}
+      </p>
+      <form className='flex items-center p-4'>
+        <BiHappy />
+        <input
+          type='text'
+          placeholder='Comment...'
+          className='border-none flex-1 focus:ring-0'
+        />
+        <button className='text-blue-400 font-bold'>Post</button>
+      </form>
     </div>
   );
 };
