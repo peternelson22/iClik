@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect, SetStateAction } from 'react';
-import minifaker, { number } from 'minifaker';
+import minifaker from 'minifaker';
 import 'minifaker/locales/en';
+import { useEffect, useState } from 'react';
 import Story from './Story';
 
 type Props = {
@@ -30,7 +30,7 @@ const Stories = () => {
   }, []);
 
   return (
-    <div className='flex space-x-2 p-6 bg-white mt-8 border-gray-200 border overflow-x-scroll rounded-sm scrollbar-none'>
+    <div className='flex space-x-2 p-6 bg-white mt-8 border-gray-200 border overflow-x-scroll rounded-sm scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-50'>
       {stories.map((story) => (
         <Story key={story.id} username={story.username} img={story.img} />
       ))}
