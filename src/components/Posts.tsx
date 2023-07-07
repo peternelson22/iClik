@@ -13,22 +13,22 @@ const Posts = () => {
     {
       id: 1,
       username: 'Nelson',
-      userImg: './logo.png',
-      img: './10.jpg',
+      userImg: '/logo.png',
+      img: '/10.jpg',
       caption: 'Hello there',
     },
     {
       id: 2,
       username: 'Nelson',
-      userImg: './logo.png',
-      img: './10.jpg',
+      userImg: '/logo.png',
+      img: '/10.jpg',
       caption: 'Hello there',
     },
     {
       id: 3,
       username: 'Nelson',
-      userImg: './logo.png',
-      img: './10.jpg',
+      userImg: '/logo.png',
+      img: '/10.jpg',
       caption: 'Hello there',
     },
   ];
