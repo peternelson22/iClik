@@ -1,3 +1,4 @@
+import Posts from './Posts';
 import Stories from './Stories';
 
 type Props = {};
@@ -7,7 +8,9 @@ const Feed = (props: Props) => {
       <section>
         <Stories />
       </section>
-      <section></section>
+      <section>
+        <Posts />
+      </section>
     </main>
   );
 };
