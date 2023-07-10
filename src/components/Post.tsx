@@ -26,8 +26,8 @@ const Post = ({ id, userImg, username, img, caption }: Props) => {
         <PiDotsThreeVerticalBold className='h-5 cursor-pointer' />
       </div>
       <Image src={img} alt='user' height={760} width={760} />
-      <div className='flex justify-between px-4 pt-4'>
-        <div className='flex space-x-4'>
+      <div className='flex justify-between px-4 pt-4 items-center'>
+        <div className='flex space-x-4 items-center'>
           <BsHeart className='btn' />
           <BsChatDots className='btn' />
         </div>
